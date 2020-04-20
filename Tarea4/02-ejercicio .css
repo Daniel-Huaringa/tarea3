@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+}
+/* ---BLOQUES PRIMARIOS--- */
+nav{
+  background-color: #4267B2;
+  height: 5%;
+}
+header{
+  background-color: #F5F6F7;
+  height: 15%;
+}
+main {
+  height: 77%;
+}
+footer{
+  background-color: #31AD52;
+  height: 3%
+}
+/* ---BLOQUES SECUNDARIOS--- */
+.div-1{
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.div-2{
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+/* ---BLOQUES TERCIARIOS--- */
+#as1{
+  height: 33.33%;
+  background-color: #4284F7;
+}
+#as2{
+  height: 33.33%;
+  background-color: #EF4231;
+}
+#as3{
+  height: 33.33%;
+  background-color: #FFBD00;
+}
+#content{
+  background-color: #ffffff;
+}
+.fix{
+  clear: both;
+}
