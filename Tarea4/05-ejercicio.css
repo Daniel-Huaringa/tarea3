@@ -13,13 +13,14 @@
   background-color: #3B3532;
   color: #E1DDDB;
   text-align: center;
+  font-family: 'Manrope', sans-serif;
 }
 #lista{
   list-style: none;
   margin-left: -40px;
 }
 #encabezado{
-  font-size: 30px;
+  font-size: 25px;
   padding: 20px;
   margin-bottom: 10px;
 }
@@ -38,7 +39,7 @@ span{
 .div{
   padding: 20px 12.75px;
   float: left;
-  font-size: 10px;
+  font-size: 9px;
   color: #68706F;
   border: 0.02px solid #423D3B;
 }
