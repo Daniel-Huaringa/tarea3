@@ -16,32 +16,32 @@ main{
 }
 div{
   width: 768px;
-  height: 500px;
+  height: calc(100vh - 30px);
   display: flex;
   flex-wrap: wrap;
 }
 .section-1{
-  height: 300px;
+  height: 60%;
   width: 60%;
   background-color: #133673;
 }
 .section-2{
-  height: 300px;
+  height: 60%;
   width: 40%;
   background-color: #2963D2;
 }
 .section-3{
-  height: 200px;
+  height: 40%;
   width: 33.33%;
   background-color: #B7CFF7;
 }
 .section-4{
-  height: 200px;
+  height: 40%;
   width: 33.33%;
   background-color: #C6D4EA;
 }
 .section-5{
-  height: 200px;
+  height: 40%;
   width: 33.33%;
   background-color: #D3D7DA;
 }
@@ -52,19 +52,23 @@ div{
 
 @media (max-width: 768px) {
   .section-1{
+    height: 50%;
     width: 100%;
   }
   .section-2{
+    height: 25%;
     width: 50%;
-    height: 200px;
   }
   .section-3{
+    height: 25%;
     width: 50%;
   }
   .section-4{
+    height: 25%;
     width: 50%;
   }
   .section-5{
+    height: 25%;
     width: 50%;
   }
 }
