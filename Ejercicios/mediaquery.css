@@ -72,6 +72,7 @@ div{
 @media (max-width: 480px) {
   .section-1{
     width: 100%;
+    height: calc(100vh - 30px);
   }
   .section-2{
     width: 100%;
