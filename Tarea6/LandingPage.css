@@ -8,7 +8,7 @@
 :root{
   /* tamaños */
   --header-alto: 50px;
-  --footer-alto: 40px;
+  --footer-alto: 50px;
   /* colores */
   --amarillo: #FFBB33;
   --amarillo-claro: #FFDA91;
@@ -178,7 +178,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   background-color: var(--amarillo);
-  font-size: 12px;
+  font-size: 15px;
 }
 .nav-footer{
   list-style: none;
