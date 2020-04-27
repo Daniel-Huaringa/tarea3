@@ -89,16 +89,14 @@ nav{
 }
 .primera-vista-boton{
   padding: 15px 70px;
-  background-color: var(--amarillo-oscuro);
-  border: none;
-  border-bottom-left-radius: 500px;
-  border-bottom-right-radius: 500px;
-  border-top-left-radius: 500px;
-  border-top-right-radius: 500px;
-  letter-spacing: 3px;
   margin-bottom: 50px;
+  border-radius: 10px;
+  border: none;
   outline: none;
+  background-color: var(--amarillo-oscuro);
   box-shadow: 0px 0px 5px -1px rgba(0,0,0,1);
+  letter-spacing: 2px;
+  font-family: var(--fuente-Exo2);
 }
 .primera-vista-boton:hover{
   background-color: var(--amarillo);
@@ -226,7 +224,12 @@ footer{
     display: none;
   }
 }
-
+/* AJUSTE HORIZONTAL PARA CELULAR */
+@media (max-height: 750px) {
+  .card{
+    height: 100px;
+  }
+}
 @media (max-height: 375px) {
   .primera-vista-titulo{
     font-size: 25px;  
