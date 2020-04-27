@@ -63,6 +63,9 @@ nav{
 .nav-header-item:hover{
   color: var(--amarillo-claro);
 }
+.menu{
+  display: none;
+}
 
 /* -----MAIN: PRIMERA PARTE----- */
 /* FONDO */
@@ -220,6 +223,16 @@ footer{
 }
 
 @media (max-width: 480px) {
+  .nav-header{
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  .nav-header-item{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
   .derechos{
     display: none;
   }
