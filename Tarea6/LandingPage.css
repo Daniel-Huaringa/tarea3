@@ -225,11 +225,6 @@ footer{
   }
 }
 /* AJUSTE HORIZONTAL PARA CELULAR */
-@media (max-height: 750px) {
-  .card{
-    height: 100px;
-  }
-}
 @media (max-height: 375px) {
   .primera-vista-titulo{
     font-size: 25px;  
