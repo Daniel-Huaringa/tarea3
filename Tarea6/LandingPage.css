@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+/* -----VARIABLES----- */
+:root{
+  /* tamaños */
+  --header-alto: 50px;
+  --footer-alto: 40px;
+  /* colores */
+  --amarillo: #FFBB33;
+  --amarillo-claro: #FFDA91;
+  --amarillo-oscuro: #FFAA00;
+}
+body{
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Exo 2', sans-serif;
+}
+/* -----HEADER----- */
+header{
+  height: var(--header-alto);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+/* LOGO Y NOMBRE */
+.logo{
+  width: 150px;
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+}
+.logo-img{
+  border-radius: 20%;
+}
+.nombre{
+  color: white;
+  text-decoration: none;
+}
+.nombre:hover{
+  color: var(--amarillo-claro);
+}
+/* NAVEGADOR */
+nav{
+  width: 300px;
+}
+.nav-header{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-header-item{
+  color: white;
+  text-decoration: none;
+}
+.nav-header-item:hover{
+  color: var(--amarillo-claro);
+}
+/* -----MAIN: PRIMERA PARTE----- */
+/* FONDO */
+.primera-vista{
+  height: calc(100vh - var(--header-alto));
+  background-image: url(./Imagenes/institucional2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* DIVISIÓN SUPERIOR-INFERIOR  */
+.primera-vista-superior, .primera-vista-inferior{
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+.primera-vista-inferior{
+  justify-content: center;
+}
+/* TITULO Y BOTÓN */
+.primera-vista-titulo{
+  margin-left: 50px;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+.primera-vista-boton{
+  padding: 15px 70px;
+  background-color: var(--amarillo-oscuro);
+  border: none;
+  border-bottom-left-radius: 500px;
+  border-bottom-right-radius: 500px;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+  outline: none;
+  box-shadow: 0px 0px 5px -1px rgba(0,0,0,1);
+}
+.primera-vista-boton:hover{
+  background-color: var(--amarillo);
+}
+/* -----MAIN: SEGUNDA PARTE----- */
+/* TAMAÑO */
+.oferta{
+  height: calc(100vh - var(--footer-alto));
+}
+/* DIVISIÓN SUPERIOR-INFERIOR  */
+.oferta-superior{
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.oferta-inferior{
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* TITULO Y CARDS */
+.oferta-superior-titulo{
+  width: 400px;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-size: 22px;
+}
+.oferta-inferior-1, .oferta-inferior-2{
+  display: flex;
+}
+.card{
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 8px;
+  color: white;
+  border-radius: 5%;
+  box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
+}
+.card:hover{
+  color: var(--amarillo);
+}
+/* IMAGENES Y TEXTO */
+.li1{
+  background-image: url(./Imagenes/finanzas\ personales.jpg);
+  background-size: cover;
+}
+.li2{
+  background-image: url(./Imagenes/Financiamiento.jpg);
+  background-size: cover;
+}
+.li3{
+  background-image: url(./Imagenes/inversion2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.li4{
+  background-image: url(./Imagenes/tributacion2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.texto{
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.50);
+  font-size: 22px;
+  font-weight: 350;
+}
+/* -----FOOTER----- */
+footer{
+  height: var(--footer-alto);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--amarillo);
+  font-size: 12px;
+}
+.nav-footer{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-footer-item{
+  text-decoration: none;
+  color: black;
+}
+.nav-footer-item:hover{
+  color: white;
+}
+.derechos{
+  margin-right: 10px;
+}
+/* -----MEDIA QUERIES----- */
+@media (max-width: 1080px) {
+  .oferta-inferior{
+    flex-wrap: wrap;
+  }
+  .oferta-inferior-1, .oferta-inferior-2{
+    width: 100%;
+    justify-content: center;
+  }
+  .card{
+    height: 180px;
+  }
+}
+
+@media (max-width: 800px) {
+  .primera-vista-superior{
+    width: 50%;
+  }
+  .derechos{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .derechos{
+    display: none;
+  }
+}
