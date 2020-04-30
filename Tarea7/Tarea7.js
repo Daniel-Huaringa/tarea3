@@ -68,10 +68,13 @@ console.log(`---------Ejercicio 3.8-------------`)
 // > $3500            : 10%
 // Realice el algoritmo correspondiente para calcular los dos tipos de bono, asignando el mayor, y represéntelo con un diagrama de flujo y pseudocódigo
 
-let bonoAnios = 0;
-let bonoSueldo = 0;
+
+// let anios = +prompt("Ingrese años de antigüedad")
+// let Sueldo = +prompt("Ingrese Sueldo")
 let anios = 3;
 let Sueldo = 1100;
+let bonoAnios = 0;
+let bonoSueldo = 0;
 if (anios <= 2) {
   bonoAnios = 0;
 } else if (anios > 2 && anios <= 5) {
@@ -80,9 +83,9 @@ if (anios <= 2) {
   bonoAnios = 30;
 }
 
-if (Sueldo <= 1000) {
+if (Sueldo < 1000) {
   bonoSueldo = 25;
-} else if (Sueldo > 1000 && Sueldo <=3500) {
+} else if (Sueldo >= 1000 && Sueldo <=3500) {
   bonoSueldo = 15;
 } else {
   bonoSueldo = 10;
@@ -98,7 +101,47 @@ if (bonoAnios > bonoSueldo) {
 console.log(`---------Ejercicio 3.9-------------`)
 // 3.9 Una compañía de seguros para autos ofrece dos tipos de póliza: cobertura amplia (A) y daños a terceros (B). Para el plan A, la cuota base es de $1,200, y para el B, de $950. A ambos planes se les carga 10% del costo si la persona que conduce tiene por hábito beber alcohol, 5% si utiliza lentes, 5% si padece alguna enfermedad –como deficiencia cardiaca o diabetes–, y si tiene más de 40 años, se le carga 20%, de lo contrario sólo 10%. Todos estos cargos se realizan sobre el costo base. Realice diagrama de flujo y diagrama N/S que represente el algoritmo para determinar cuánto le cuesta a una persona contratar una póliza.
 
+let a = 0;
+let b = 0;
+let alcohol = +prompt("¿Bebe alcohol? Ingrese 1 (Si) ó 2 (No)");
+let lentes = +prompt("¿Usa lentes? Ingrese 1 (Si) ó 2 (No)");
+let enfermedad = +prompt("¿Sufre alguna enfermedad? Ingrese 1 (Si) ó 2 (No)");
+let edad = +prompt("Ingrese edad en años");
+let cargoAlc = 0;
+let cargoLen = 0;
+let cargoEnf = 0;
+let cargoEda = 0;
 
+
+if (alcohol === 1) {
+  cargoAlc = 0.10;
+}
+if (lentes === 1) {
+  cargoLen = 0.05;
+}
+if (enfermedad === 1) {
+  cargoEnf = 0.05;
+}
+if (edad > 40) {
+  cargoEda = 0.20;
+} else {
+  cargoEda = 0.10;
+}
+a = 1200 * (1+(cargoAlc + cargoLen + cargoEnf + cargoEda));
+b = 950 * (1+(cargoAlc + cargoLen + cargoEnf + cargoEda));
+
+console.log(`La póliza de cobertura amplica cotiza en $${a}`);
+console.log(`La póliza de daños a terceros cotiza en $${b}`);
 
 console.log(`---------Ejercicio 3.11-------------`)
 // 3.11 Se les dará un bono por antigüedad a los empleados de una tienda. Si tienen un año, se les dará $100; si tienen 2 años, $200, y así sucesivamente hasta los 5 años. Para los que tengan más de 5, el bono será de $1000. Realice un algoritmo y represéntelo mediante el diagrama de flujo, el pseudocódigo y diagrama N/S que permita determinar el bono que recibirá un trabajador
+
+// let antiguedad = +prompt("Ingrese los años de antigüedad");
+let antiguedad = 0;
+let bono = 0;
+if (antiguedad >= 1 && antiguedad <= 5) {
+  bono = antiguedad*100
+} else if (antiguedad > 5) {
+  bono = 1000;
+}
+console.log(`Le corresponde un bono de $${bono}`)
