@@ -1,0 +1,18 @@
+.header{
+  background-color: #444;
+  box-shadow: #444 0px 0px 5px;
+}
+.header__item {
+  transition: flex 0.5s ease;
+}
+.header__item:hover{
+  background-color: #555;
+  transform: scale(1.2);
+}
+.header__item:hover a{
+  color: #fff;
+  transform: scale(1.2);
+}
+.header__item{
+  color: #ccc;
+}
