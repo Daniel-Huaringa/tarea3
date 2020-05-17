@@ -1,0 +1,19 @@
+:root{
+  --amarillo: #FFBB33;
+  --amarillo-claro: #FFDA91;
+  --amarillo-oscuro: #FFAA00;
+}
+
+.header{
+  color: var(--amarillo);
+  background-color: black;
+  font-size: 3px;
+}
+
+.Cabecera{
+  background-color: #fbfbfb;
+}
+
+.thead{
+  background-color: var(--amarillo-oscuro);
+}

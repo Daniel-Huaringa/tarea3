@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- CDN de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./factura.css">
+  <title>Facturas</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <header class="header p-2">
+          <h3>Factura</h3>
+        </header>
+        <section class="Cabecera container p-3">
+          <form id="datosCabecera" >
+            <div class="row">
+              <label for="inputRazon" class="col-lg-2 col-form-label">Razon Social:</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="inputRazon">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4">
+                <label for="inputRuc">RUC:</label>
+                <input type="text" id="inputRuc" class="form-control">
+              </div>
+              <div class="col-md-4">
+                <label for="inputFecha">Fecha:</label>
+                <input type="date" id="inputFecha" class="form-control">
+              </div>
+              <div class="col-md-4">
+                <label for="inputNro">Número:</label>
+                <input type="text" id="inputNro" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-5">
+                <label for="inputDesc">Descripción:</label>
+                <input type="text" id="inputDesc" class="form-control">
+              </div>
+              <div class="col-md-2">
+                <label for="inputCant">Cantidad:</label>
+                <input type="text" id="inputCant" class="form-control">
+              </div>
+              <div class="col-md-2">
+                <label for="inputPu">P. Unitario:</label>
+                <input type="text" id="inputPu" class="form-control">
+              </div>
+              <div class="col-md-2">
+                <label for="inputPt">P. Total:</label>
+                <input type="text" id="inputPt" class="form-control-plaintext">
+              </div>
+              <div class="col-md-1 pt-4">
+                <button type="" class="btn btn-success" id="agregar">
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+        </section>
+        <section class="Detalle">
+          <table class="table text-center">
+            <thead class="thead">
+              <tr>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>P. Unitario</th>
+                <th>P. Total</th>
+              </tr>
+            </thead>
+            <tbody id="tablaDetalle">
+              <!-- <tr class="cuerpo">
+                <td>Artículo</td>
+                <td>2</td>
+                <td>20</td>
+                <td>40</td>
+              </tr> -->
+            </tbody>
+          </table>
+          <div class="Totales row">
+            <div class="col-12 text-right">
+              <label for="totalFactura" class="col-xs-1">Total: </label>
+              <input type="text" id="totalFactura" class="col-sm-2" value="0.00">
+            </div>
+            <div class="col">
+              <div class="pt-3">
+                <button type="submit" class="btn btn-primary" id="guardar">
+                  Guardar
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Script de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- JavaScript -->
+<script src="./factura.js"></script>
+</body>
+</html>
