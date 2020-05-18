@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS de Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Instalación</title>
+</head>
+
+<body>
+
+  <main class="container z-depth-3">
+    <h4>Formularios:</h4>
+    <div class="row">
+      <div class="col s12">
+        <h6>Input:</h6>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">textsms</i>
+            <input type="text" id="autocomplete-input" class="autocomplete">
+            <label for="autocomplete-input">Ingrese Texto</label>
+          </div>
+        </div>
+        <h6>Chips:</h6>
+        <div class="chip">
+          <img src="https://via.placeholder.com/30" alt="Contact Person">
+          Con imagen
+        </div>
+        <div class="chip">
+          Sin imagen
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s4">
+      <h6>Cajas de marcado:</h6>
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Desmarcado</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" checked="checked" />
+            <span>Marcado</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" class="filled-in" checked="checked" />
+            <span>Marcado interno</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" checked="checked" disabled="disabled" />
+            <span>Marcado desabilitado</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" disabled="disabled" />
+            <span>Desmarcado desabilitado</span>
+          </label>
+        </p>
+      </form>
+      </div>
+      
+      <div class="col s4">
+        <h6>Radiales:</h6>
+        <form action="#">
+          <p>
+            <label>
+              <input name="group1" type="radio" checked />
+              <span>Marcado</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="group1" type="radio" />
+              <span>Desmarcado</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="group1" type="radio"  />
+              <span>Marcado interno</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="group1" type="radio" disabled="disabled" />
+              <span>Desabilitado</span>
+            </label>
+          </p>
+        </form>
+      </div>
+
+      <div class="col s4">
+        <h6>Botones:</h6>
+        <a class="btn-floating btn-large"><i class="material-icons">menu</i></a>
+        <a class="btn-floating cyan"><i class="material-icons">cloud</i></a>
+        <br>
+        <br>
+        <h6>Botón con pulso:</h6>
+        <a class="btn-floating btn-large red pulse"><i class="material-icons">edit</i></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <h6>Switch activo:</h6>
+        <div class="switch">
+          <label>
+            Off
+            <input type="checkbox">
+            <span class="lever"></span>
+            On
+          </label>
+        </div>
+  
+        <h6>Switch inactivo:</h6>
+        <div class="switch">
+          <label>
+            Off
+            <input disabled type="checkbox">
+            <span class="lever"></span>
+            On
+          </label>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
